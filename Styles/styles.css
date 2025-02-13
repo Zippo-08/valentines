@@ -75,3 +75,11 @@ body {
     max-width: 100%;
     height: auto;
 }
+.sub_text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px; /* Smaller font */
+    color: white;
+    text-align: center;
+    margin-top: -10px; /* Adjust spacing */
+    opacity: 0.8; /* Slightly faded look */
+}
