@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/yes.css">
+    <style>
+        /* Ensure full screen height */
+        body, .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Larger text on bigger screens */
+        .header_text {
+            font-size: 3rem; /* Bigger default size */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .gif_container img {
+            width: 60vw; /* Makes the GIF scale with screen size */
+            max-width: 350px; /* Slightly bigger max size */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        .text {
+            font-size: 1.8rem; /* Increased text size */
+            margin-top: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header_text {
+                font-size: 2.5rem;
+            }
+
+            .text {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header_text {
+                font-size: 2rem;
+            }
+
+            .text {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header_text">Mhmmm♡</h1>
+        <div class="gif_container">
+            <img src="./assets/love.gif" alt="Cute animated illustration">
+        </div>
+        <p class="text">Thank you my love, I'll see you soon</p>
+    </div>
+</body>
+</html>
+
+

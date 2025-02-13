@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <script src="./script.js" defer></script>
+    <style>
+        /* Centering and spacing for better responsiveness */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header_text {
+            font-size: 3rem; /* Larger text */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .gif_container img {
+            width: 60vw; /* Makes the GIF scale with screen size */
+            max-width: 350px; /* Limits size on larger screens */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* Pastel color buttons */
+        #yesButton {
+            background-color: #A8E6CF; /* Pastel green */
+            color: #2E7D32;
+        }
+
+        #noButton {
+            background-color: #FFB6C1; /* Pastel pink */
+            color: #D81B60;
+        }
+
+        /* Hover effects */
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 768px) {
+            .header_text {
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                font-size: 1.2rem;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header_text {
+                font-size: 2rem;
+            }
+
+            .btn {
+                font-size: 1rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header_text">Hasini, will you be my valentine? hehe</h1>
+        <div class="gif_container">
+            <img src="https://64.media.tumblr.com/44437aaa3af65ef5b5dc25b2cf1e81d1/6acc7d78ea83e207-45/s400x600/5b30035952803850ed3136fbe760ceff97ee8d19.gif" alt="Cute animated illustration">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+        </div>
+    </div>
+</body>
+</html>
+
